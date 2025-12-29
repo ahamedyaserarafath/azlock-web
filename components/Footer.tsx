@@ -28,23 +28,23 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">FAQs</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="https://github.com/ahamedyaserarafath/azlock-web" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Documentation</a></li>
+              <li><a href="/azlock-web/faq" className="hover:text-white transition-colors">FAQs</a></li>
+              <li><a href="/azlock-web/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="mailto:ahamedyaserarafath@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-white font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://github.com/ahamedyaserarafath/azlock-web" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="mailto:ahamedyaserarafath@gmail.com" className="hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>
