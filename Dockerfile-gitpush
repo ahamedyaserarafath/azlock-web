@@ -45,12 +45,12 @@ CMD if [ -n "$GIT_TOKEN" ]; then \
     if git commit -m "${COMMIT_MSG:-Auto commit from Docker}"; then \
         echo "✓ Commit successful" && \
         echo "Pushing to remote repository..." && \
-        if git push -u $AUTH_URL main 2>&1; then \
-            echo "✓ Successfully pushed to main branch"; \
-        elif git push -u $AUTH_URL master 2>&1; then \
+        if git push -u $AUTH_URL master 2>&1; then \
             echo "✓ Successfully pushed to master branch"; \
-        elif git push -u $AUTH_URL HEAD:main 2>&1; then \
-            echo "✓ Successfully pushed HEAD to main branch"; \
+        elif git push -u $AUTH_URL main 2>&1; then \
+            echo "✓ Successfully pushed to main branch"; \
+        elif git push -u $AUTH_URL HEAD:master 2>&1; then \
+            echo "✓ Successfully pushed HEAD to master branch"; \
         else \
             echo "✗ ERROR: Failed to push to remote repository" && \
             echo "Check if:" && \
