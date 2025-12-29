@@ -62,3 +62,4 @@ CMD if [ -n "$GIT_TOKEN" ]; then \
     else \
         echo "No changes to commit - repository is up to date"; \
     fi
+
