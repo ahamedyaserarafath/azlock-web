@@ -5,7 +5,7 @@ import {
   Brain, Lock, GraduationCap, Users, Trophy, Shield, 
   BookOpen, Calculator, Beaker, Globe, Zap, Heart,
   CheckCircle, XCircle, Download, Star, ArrowRight,
-  Smartphone, Baby, User, UserCircle, School
+  Smartphone, Baby, User, UserCircle, School, Sparkles
 } from 'lucide-react'
 import QADemo from '@/components/QADemo'
 import GradeLevels from '@/components/GradeLevels'
@@ -30,8 +30,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-                <Star className="w-5 h-5 text-yellow-300 fill-yellow-300" />
-                <span className="text-sm font-medium">World's First Educational App Lock</span>
+                <Sparkles className="w-5 h-5 text-yellow-300 fill-yellow-300" />
+                <span className="text-sm font-medium">AI-Powered Educational App Lock</span>
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -48,8 +48,8 @@ export default function Home() {
               
               <div className="flex flex-wrap gap-4 mb-8">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-green-300" />
-                  <span>100+ Questions</span>
+                  <Sparkles className="w-5 h-5 text-yellow-300" />
+                  <span>AI-Generated Questions</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5 text-green-300" />
@@ -88,11 +88,15 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-100 to-orange-100 px-4 py-2 rounded-full mb-4">
+              <Sparkles className="w-5 h-5 text-orange-600" />
+              <span className="text-sm font-semibold text-orange-900">Powered by AI</span>
+            </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-gradient">
-              The Q&A Revolution
+              The AI-Powered Q&A Revolution
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              AzLock isn't just another app locker — it's the world's first Educational Security System that turns every unlock into a learning opportunity.
+              AzLock uses artificial intelligence to generate fresh, educational questions across multiple subjects and grade levels. Every unlock is a unique learning opportunity powered by smart technology.
             </p>
           </div>
 

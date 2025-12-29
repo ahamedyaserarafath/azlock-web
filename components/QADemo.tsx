@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { CheckCircle, XCircle, RefreshCw } from 'lucide-react'
+import { CheckCircle, XCircle, RefreshCw, Sparkles } from 'lucide-react'
 
 const sampleQuestions = [
   {
@@ -48,9 +48,13 @@ export default function QADemo() {
   return (
     <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-md mx-auto">
       <div className="flex items-center justify-between mb-6">
-        <div>
+        <div className="flex items-center gap-2">
           <span className="text-sm font-medium text-primary-600 bg-primary-50 px-3 py-1 rounded-full">
             {question.subject}
+          </span>
+          <span className="inline-flex items-center gap-1 text-xs font-medium text-orange-600 bg-orange-50 px-2 py-1 rounded-full">
+            <Sparkles className="w-3 h-3" />
+            AI
           </span>
         </div>
         <span className="text-sm text-gray-500">{question.grade}</span>
