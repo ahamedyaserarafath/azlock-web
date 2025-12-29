@@ -1,0 +1,64 @@
+FROM alpine:latest
+
+# Usage:
+# Build: docker build -t git-push -f Dockerfile-gitpush .
+# Run: docker run --rm -v $(pwd):/repo -e COMMIT_MSG="Your commit message" -e GIT_TOKEN=your_token git-push
+# Note: This will automatically initialize git repo if not already initialized
+
+# Install git
+RUN apk add --no-cache git openssh
+
+# Set working directory
+WORKDIR /repo
+
+# Configure git
+RUN git config --global credential.helper store && \
+    git config --global user.name "ahamedyaserarafath" && \
+    git config --global user.email "ahamedyaserarafath@gmail.com"
+
+# Repository URL
+ENV REPO_URL=https://github.com/ahamedyaserarafath/azlock-web
+
+# Simple git push script with token support
+CMD if [ -n "$GIT_TOKEN" ]; then \
+        AUTH_URL=$(echo $REPO_URL | sed "s|https://|https://${GIT_TOKEN}@|"); \
+    else \
+        AUTH_URL=$REPO_URL; \
+    fi && \
+    echo "Checking git repository..." && \
+    if [ ! -d ".git" ]; then \
+        echo "Initializing git repository..." && \
+        git init && \
+        git remote add origin $AUTH_URL; \
+    else \
+        echo "Git repository already initialized" && \
+        if ! git remote get-url origin >/dev/null 2>&1; then \
+            echo "Adding remote origin..." && \
+            git remote add origin $AUTH_URL; \
+        fi; \
+    fi && \
+    echo "Current git status:" && \
+    git status && \
+    echo "Adding all changes..." && \
+    git add -A && \
+    echo "Committing changes..." && \
+    if git commit -m "${COMMIT_MSG:-Auto commit from Docker}"; then \
+        echo "✓ Commit successful" && \
+        echo "Pushing to remote repository..." && \
+        if git push -u $AUTH_URL main 2>&1; then \
+            echo "✓ Successfully pushed to main branch"; \
+        elif git push -u $AUTH_URL master 2>&1; then \
+            echo "✓ Successfully pushed to master branch"; \
+        elif git push -u $AUTH_URL HEAD:main 2>&1; then \
+            echo "✓ Successfully pushed HEAD to main branch"; \
+        else \
+            echo "✗ ERROR: Failed to push to remote repository" && \
+            echo "Check if:" && \
+            echo "  1. Repository exists: $REPO_URL" && \
+            echo "  2. GitHub token is valid" && \
+            echo "  3. You have write access to the repository" && \
+            exit 1; \
+        fi; \
+    else \
+        echo "No changes to commit - repository is up to date"; \
+    fi
