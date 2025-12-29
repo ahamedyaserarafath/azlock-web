@@ -72,8 +72,8 @@ const faqData: FAQItem[] = [
     answer: "AzLock requires: Device Admin (to prevent unauthorized uninstall), Usage Access (to detect when apps open), Overlay Permission (to display lock screen), and optionally Biometric permission (for fingerprint/face unlock). These permissions are only used for core functionality, never for data collection."
   },
   {
-    question: "Is AzLock open source?",
-    answer: "Yes! AzLock is open source and available on GitHub. You can review our code, verify our privacy claims, contribute improvements, or report issues. Transparency is important to us."
+    question: "How can I trust AzLock's privacy claims?",
+    answer: "AzLock's privacy-first design is verifiable through its functionality: it requires zero internet permissions, collects no personal data, and works 100% offline. You can verify these claims by checking the app's required permissions in your device settings and testing it in airplane mode."
   },
   {
     question: "Does AzLock drain battery?",
@@ -97,11 +97,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Can I suggest new features?",
-    answer: "Absolutely! We welcome feature suggestions and feedback. You can open an issue on our GitHub repository or contact us via email. We actively consider user feedback for future updates."
+    answer: "Absolutely! We welcome feature suggestions and feedback. You can contact us via email at ahamedyaserarafath@gmail.com. We actively consider user feedback for future updates."
   },
   {
     question: "How do I report a bug?",
-    answer: "If you encounter a bug, please report it on our GitHub repository with details about your device, Android version, and steps to reproduce the issue. You can also use the built-in crash log viewer in the app's developer tools section."
+    answer: "If you encounter a bug, please contact us at ahamedyaserarafath@gmail.com with details about your device, Android version, and steps to reproduce the issue. Include screenshots if possible to help us identify and fix the problem quickly."
   },
   {
     question: "Will my progress/settings sync across devices?",
@@ -175,16 +175,8 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://github.com/ahamedyaserarafath/azlock-web"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
-            >
-              Open GitHub Issue
-            </a>
-            <a
               href="mailto:ahamedyaserarafath@gmail.com"
-              className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors border-2 border-primary-600"
+              className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
             >
               Email Us
             </a>

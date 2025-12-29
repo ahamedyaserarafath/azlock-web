@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
               <ul className="space-y-2 mb-4 text-gray-700">
                 <li>• Checking the app permissions in your device settings</li>
                 <li>• Enabling airplane mode and confirming the app still works</li>
-                <li>• Reviewing our open-source code on GitHub</li>
+                <li>• Testing that no data leaves your device</li>
               </ul>
             </section>
 
@@ -150,16 +150,16 @@ export default function PrivacyPolicy() {
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Open Source Transparency
+                Verifiable Privacy
               </h2>
               <p className="text-gray-700 leading-relaxed mb-4">
-                AzLock is <strong>open source</strong>, meaning anyone can review our code to verify our privacy claims:
+                You can <strong>verify AzLock's privacy claims</strong> through its technical design:
               </p>
               <ul className="space-y-2 mb-4 text-gray-700">
-                <li>• Full source code available on GitHub</li>
-                <li>• No hidden tracking or data collection code</li>
-                <li>• Community-reviewed and auditable</li>
-                <li>• Transparent development process</li>
+                <li>• Zero internet permissions required (verifiable in app settings)</li>
+                <li>• Works in airplane mode (test it yourself)</li>
+                <li>• No account registration or cloud services</li>
+                <li>• Minimal system permissions, only for core functionality</li>
               </ul>
             </section>
 
@@ -215,7 +215,6 @@ export default function PrivacyPolicy() {
                 If you have questions about this privacy policy or AzLock's privacy practices:
               </p>
               <ul className="space-y-2 text-gray-700">
-                <li>• Open an issue on our GitHub repository</li>
                 <li>• Email: ahamedyaserarafath@gmail.com</li>
               </ul>
             </section>

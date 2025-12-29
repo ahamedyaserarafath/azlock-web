@@ -125,7 +125,7 @@ export default function Features() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-300 mr-2">✓</span>
-                  <span>Open Source — Transparent security</span>
+                  <span>Zero Tracking — Complete privacy</span>
                 </li>
               </ul>
             </div>
