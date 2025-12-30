@@ -31,6 +31,7 @@ export default function Footer() {
               <li><a href="https://github.com/ahamedyaserarafath/azlock-web" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Documentation</a></li>
               <li><a href="/azlock-web/faq" className="hover:text-white transition-colors">FAQs</a></li>
               <li><a href="/azlock-web/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="/azlock-web/terms" className="hover:text-white transition-colors">Terms of Service</a></li>
               <li><a href="mailto:azlock.ai@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
