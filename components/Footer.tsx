@@ -31,7 +31,7 @@ export default function Footer() {
               <li><a href="https://github.com/ahamedyaserarafath/azlock-web" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Documentation</a></li>
               <li><a href="/azlock-web/faq" className="hover:text-white transition-colors">FAQs</a></li>
               <li><a href="/azlock-web/privacy" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="mailto:ahamedyaserarafath@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><a href="mailto:azlock.ai@gmail.com" className="hover:text-white transition-colors">Contact Us</a></li>
             </ul>
           </div>
           
@@ -44,7 +44,7 @@ export default function Footer() {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 <Twitter className="w-6 h-6" />
               </a>
-              <a href="mailto:ahamedyaserarafath@gmail.com" className="hover:text-white transition-colors">
+              <a href="mailto:azlock.ai@gmail.com" className="hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
               </a>
             </div>

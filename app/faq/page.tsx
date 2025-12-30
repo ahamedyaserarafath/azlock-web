@@ -97,11 +97,11 @@ const faqData: FAQItem[] = [
   },
   {
     question: "Can I suggest new features?",
-    answer: "Absolutely! We welcome feature suggestions and feedback. You can contact us via email at ahamedyaserarafath@gmail.com. We actively consider user feedback for future updates."
+    answer: "Absolutely! We welcome feature suggestions and feedback. You can contact us via email at azlock.ai@gmail.com. We actively consider user feedback for future updates."
   },
   {
     question: "How do I report a bug?",
-    answer: "If you encounter a bug, please contact us at ahamedyaserarafath@gmail.com with details about your device, Android version, and steps to reproduce the issue. Include screenshots if possible to help us identify and fix the problem quickly."
+    answer: "If you encounter a bug, please contact us at azlock.ai@gmail.com with details about your device, Android version, and steps to reproduce the issue. Include screenshots if possible to help us identify and fix the problem quickly."
   },
   {
     question: "Will my progress/settings sync across devices?",
@@ -175,7 +175,7 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:ahamedyaserarafath@gmail.com"
+              href="mailto:azlock.ai@gmail.com"
               className="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
             >
               Email Us

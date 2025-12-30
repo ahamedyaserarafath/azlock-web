@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
                 If you have questions about this privacy policy or AzLock's privacy practices:
               </p>
               <ul className="space-y-2 text-gray-700">
-                <li>• Email: ahamedyaserarafath@gmail.com</li>
+                <li>• Email: azlock.ai@gmail.com</li>
               </ul>
             </section>
 
